@@ -37,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		401E24610098494486D335C9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		458BEEF5185F429200C3DC33 /* ColorDiaryWriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDiaryWriteViewController.h; sourceTree = "<group>"; };
 		458BEEF6185F429200C3DC33 /* ColorDiaryWriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorDiaryWriteViewController.m; sourceTree = "<group>"; };
 		45CCB737185F38B800D619BC /* ColorDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +60,8 @@
 		45CCB765185F38B800D619BC /* ColorDiaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorDiaryTests.m; sourceTree = "<group>"; };
 		45F5876C185F3C1E009441AA /* ColorDiary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ColorDiary.xcdatamodel; sourceTree = "<group>"; };
 		CF4133D038914BBEA265E531 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7BA907CCC6AA0EE48B73405 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E7A1F33A7DC5DB55A9681E9B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		171E79EB9B56BD8B9CE3EA7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7BA907CCC6AA0EE48B73405 /* Pods.debug.xcconfig */,
+				E7A1F33A7DC5DB55A9681E9B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		45CCB72E185F38B800D619BC = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +105,7 @@
 				45CCB75F185F38B800D619BC /* ColorDiaryTests */,
 				45CCB739185F38B800D619BC /* Frameworks */,
 				45CCB738185F38B800D619BC /* Products */,
-				401E24610098494486D335C9 /* Pods.xcconfig */,
+				171E79EB9B56BD8B9CE3EA7D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -297,7 +307,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -435,7 +445,7 @@
 		};
 		45CCB76A185F38B800D619BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 401E24610098494486D335C9 /* Pods.xcconfig */;
+			baseConfigurationReference = D7BA907CCC6AA0EE48B73405 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ColorDiary/ColorDiary-Prefix.pch";
@@ -448,7 +458,7 @@
 		};
 		45CCB76B185F38B800D619BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 401E24610098494486D335C9 /* Pods.xcconfig */;
+			baseConfigurationReference = E7A1F33A7DC5DB55A9681E9B /* Pods.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ColorDiary/ColorDiary-Prefix.pch";
