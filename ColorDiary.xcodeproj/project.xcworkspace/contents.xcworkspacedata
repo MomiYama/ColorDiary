@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/yamamotomomiji/Downloads/ColorDiary-master/ColorDiary.xcodeproj">
+      location = "self:ColorDiary.xcodeproj">
    </FileRef>
 </Workspace>
